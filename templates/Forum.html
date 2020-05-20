@@ -1,0 +1,44 @@
+{% extends "Main template.html" %}
+{% block Title %} Forum {% endblock %}
+{% block MainTemplate %} {% endblock %}
+{% block website_head %}
+    <h3 style="margin-left: 70px;margin-right: 70px">To acces all the tabs of this website</h3>
+     <nav class="navbar navbar-expand-md bg-dark navbar-dark" style="margin-left: 70px;margin-right: 70px">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+         <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav" >
+            <li class="nav-item">
+                <a class="nav-link" href="/">Main menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Tutorial1">Tutorial 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Tutorial2">Tutorial 2</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="/Forum">Forum</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/ContactSupport">Contact support</a>
+            </li>
+        </ul>
+         </div>
+     </nav>
+{% endblock %}
+{% block Body %}
+    <h2 style="text-align: center; color: coral "> Welcome to Dofustus forum! </h2>
+    <br><br>
+    <h3 style="margin-left: 70px;margin-right: 70px">Recent post</h3>
+    <img style="margin-left: 30%" src="https://www.vectorsforall.com/wp-content/uploads/2019/01/Work-In-Progress-Tape-Sign-Seamless-Looping-31015.jpg" alt="Work still in progress">
+    {% block social_networks %}
+            <div style="background-color: white">
+        <pre>
+        <a href="https://www.youtube.com/channel/UCv95irwo4zKPXKZpgfLvcyg" target="_blank"><img alt="Youtube" src="https://i.pinimg.com/originals/98/df/87/98df87df9dd9694b31b5ccc522320850.png" width="300" height="250"></a>                                                  <a href="https://www.facebook.com/ismael.rekik" target="_blank"> <img alt="Facebbok" src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512" width="175" height="145"> </a>                                                 <a href="https://www.instagram.com/ismaelrekik/?hl=fr-ca" target="_blank"> <img alt="Instagram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" width="175" height="145" </a>
+
+        </pre>
+            </div>
+    {% endblock %}
+{% endblock %}

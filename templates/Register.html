@@ -1,0 +1,40 @@
+{% extends "Main template.html" %}
+{%  block Title %}
+Register
+{%  endblock %}
+{% block MainTemplate %} {% endblock %}
+{% block website_head %} {% endblock %}
+{% block Body %}
+    <form action="/register_form" method="post">
+    <div class="container">
+        <h1>Sign Up</h1>
+        <p>Enter you Email, a username and a password</p>
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+        <div class="clearfix">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+    {% block social_networks %}
+        <pre>
+        <a href="https://www.youtube.com/channel/UCv95irwo4zKPXKZpgfLvcyg" target="_blank"><img alt="Youtube" src="https://i.pinimg.com/originals/98/df/87/98df87df9dd9694b31b5ccc522320850.png" width="300" height="250"></a>                                                  <a href="https://www.facebook.com/ismael.rekik" target="_blank"> <img alt="Facebbok" src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512" width="175" height="145"> </a>                                                 <a href="https://www.instagram.com/ismaelrekik/?hl=fr-ca" target="_blank"> <img alt="Instagram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" width="175" height="145" </a>
+
+        </pre>
+            {% endblock %}
+{% endblock %}

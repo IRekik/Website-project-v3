@@ -1,0 +1,30 @@
+{% extends "Main template.html" %}
+{% block Title %} Contact support {% endblock %}
+{% block MainTemplate %} {% endblock %}
+{% block Body %}
+    <div>
+        <div class="login-container">
+            <form action="/contact_support", method="post">
+                <h4>Please enter your name and email adress</h4>
+                <input type="text" placeholder="Full name" name="name">
+                <input type="text" placeholder="Email adress" name="email">
+                <h4>Please let us know what you would like from us</h4>
+                <textarea rows="10" cols="220" placeholder="Enter your text" name="support_message"></textarea>
+                <button style="background-color: purple" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h4 style="text-align: center">F.A.Q. and previous questions answered by the MOD</h4>
+    <table border="1" class="table">
+            <th> Message </th>
+            <th> Answer from the Mod </th>
+            {% for item in list %}
+                <tr>
+                    <td>{{ item }}</td>
+                    <td>Answer from the mod in few hours</td>
+                </tr>
+            {% endfor %}
+        </table>
+{% endblock %}

@@ -1,0 +1,17 @@
+a:link {color: blue}
+a:visited {color: rebeccapurple}
+a:hover {color:green}
+a:active {color:red}
+h1,h2,h3 {font-family: "Arial Black"}
+p {font-family: Verdana}
+ol {font-family: Verdana}
+table {font-family: Verdana}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.a {
+  text-align-last: right;
+}

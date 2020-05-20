@@ -1,0 +1,95 @@
+{% extends "Main template.html" %}
+
+{% block Title %}Tutorial 2{% endblock %}
+{% block computation %}
+    <script type="text/javascript">
+        function computation(){
+            integer=document.getElementById("text5").value;
+            result=55+(integer*5)-5;
+            str=""
+            if (result < 100) {
+                str=" You HP is low. Level up!";
+            }
+            else {
+                str=" You have a good amount of HP. Congratulations!"
+            }
+            alert("You have "+result+" HP."+str);
+        }
+    </script>
+{% endblock %}
+{% block MainTemplate %}
+{% block social_networks %} {% endblock %}
+{% endblock %}
+{% block Body %}
+    <br><br>
+    <h1>Tutorial #2 : Items for characters in their low levels</h1>
+    <br>
+    <h2>About items in the game</h2>
+    <p>
+    To progress in the game, you character must increase its characteristics. There is two ways to increase a character's characteristics: level up or wear items. There are 9 types of items:
+    ring, amulet, hat, cape or backpack, weapon, boots, belt, dofuses and living object. Each item has a specialization in term of given stats: usually amulets give AP (action points), boots give MP
+    (movement points) and rings are usually the weakest items. This is why your character can wear two of them at the same time. As shown below, this is how your items will show up by opening the tab
+    "objects".
+        <br>
+        <br>
+    <img class="img-fluid" src="https://4.bp.blogspot.com/-N3i_Y3F7IGQ/TWbewfvPDuI/AAAAAAAAAFc/WmRPU1x5L3o/s1600/stufflvl200.png" alt="Error">
+        <br>
+        <br>
+    A famous website called <a href="https://barbok.eratz.fr/">Barbok</a> lists all the existing items and display their stats. I would totally recommend this website for advanced players.
+     This tutorial will more focus on items accessible in the beginning of a character progression.
+    </p>
+    <h2>Sets</h2>
+    <p>
+    Sets are an important aspect of items in Dofus. Sets are families of items that allow the character to have bonus stats when they wear multiples items from the same set. For example, the sucker set
+    as shown in the next picture, is a set composed of three items: one amulet and two rings.
+    <br>
+        <br>
+    <img class="img-fluid" src="../static/Pictures/sets.jpg" alt="Error">
+    <br>
+        <br>
+    One one item of the set gives 0 bonus to the character. However, starting from 2 items, the more items of a set you wear, the more the bonus will be important. In this case, with 2 items, your
+    character earns 20 wisdom and with 3, you character earn 1 AP and 20 wisdom. The more items you wear from the same set, the more bonus you get! Especially in early levels, set bonuses are very
+    important for good stat optimization. This is why two sets will be recommended in this tutorial.
+    </p>
+    <h2>The Young adventurer set.</h2>
+    <p>
+    This is probably the most powerful set for its level. This set can be equipped from the level 1! Individually, each item of the set does not give a lot of stats to the characters but when a
+    character wears the whole set, the set bonus is very important. Let us take a closer look at this set.
+    <br>
+        <br>
+    <img class="img-fluid" src="../static/Pictures/adventurier1.jpg" alt="Error">
+        <img class="img-fluid" src="../static/Pictures/adventurier2.jpg" alt="Error">
+    <br>
+        <br>
+    This set bonus is very important at this level because it gives 40 wisdom points. Wisdom points are important in early levels because they allow a character to earn more experience
+        after fights and to level up faster. The other stats provided by the bonus are also important at this level: it allows the character to be more tanky and to deal more damage to enemies.
+    This set is recommended for characters below level 25 because it is relatively accessible, not expensive and viable for these levels.
+    </p>
+    <h2>Gobball set</h2>
+    <p>
+    When you will reach a higher level, the young adventurer set will slowly be less impacting during fight. From the level 10, your character can already change his items. The Gobball set is perfect
+    for that part of your adventure. This set is very strong compared other sets at this level. When the set is totally equipped, the character gains 1 AP. Let us have a closer look on this set.
+    <br>
+        <br>
+    <img class="img-fluid" src="../static/Pictures/gobbal1.jpg" alt="Error">
+    <img class="img-fluid" src="../static/Pictures/gobbal2.jpg" alt="Error">
+    <br>
+        <br>
+    However, this set has an inconvenient. Unlike the young adventurer set that matches with every character and element, the Gobball set only gives stats in intelligence (fire) and strength (earth).
+    For classes like Xelor who scales in wind element, this set can be useless. This set is very accessible because you can drop these items on monsters of the Gobball family.
+    <br>
+    <br>
+    <img class="img-fluid" src="https://static1.millenium.org/articles/3/34/61/43/@/1161732-pauvres-bouftous-ils-ne-vous-ont-rien-fait-pourtant-amp_main_img-1.png" alt="Error">
+    </p>
+    <br>
+    <br><br>
+    <h4 style="text-align: center">Bonus: want to know how much health point will your character have? Enter the level of your character.</h4>
+        <input type="number" name="input" id="text5" placeholder="Enter a number">
+    <button onclick="computation()" id="btn1">Submit</button>
+        <pre>
+        <a href="https://www.youtube.com/channel/UCv95irwo4zKPXKZpgfLvcyg" target="_blank"><img alt="Youtube" src="https://i.pinimg.com/originals/98/df/87/98df87df9dd9694b31b5ccc522320850.png" width="300" height="250"></a>                                                  <a href="https://www.facebook.com/ismael.rekik" target="_blank"> <img alt="Facebbok" src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512" width="175" height="145"> </a>                                                 <a href="https://www.instagram.com/ismaelrekik/?hl=fr-ca" target="_blank"> <img alt="Instagram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" width="175" height="145" </a>
+
+        </pre>
+
+{% endblock %}
+
